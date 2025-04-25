@@ -8,4 +8,4 @@ spec:
     appID: 1230708
     installationID: 65303927
   secretRef:
-    name: my-auth-promotion
+    name: my-auth
