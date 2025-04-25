@@ -4,8 +4,6 @@ metadata:
   name: scmprovider-sample
   namespace: default
 spec:
-  github:
-    appID: 865488
-    installationID: 49029877
+  github: {}
   secretRef:
-    name: my-auth
+    name: my-auth-promotion
