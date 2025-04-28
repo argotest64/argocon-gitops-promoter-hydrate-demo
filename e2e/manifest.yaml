@@ -53,7 +53,7 @@ metadata:
   name: canary-demo
   namespace: e2e-staging
 spec:
-  replicas: 3
+  replicas: 2
   revisionHistoryLimit: 1
   selector:
     matchLabels:
