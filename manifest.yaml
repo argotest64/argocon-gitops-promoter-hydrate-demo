@@ -12,5 +12,22 @@ spec:
     name: argocon-demo
   name: environments/development/unit-test
   phase: success
-  sha: 9e01d0fb4d48ee0c2e53fa7f5a772acdcfe34b84
+  sha: 4699e8432a208002d37f28324230c59e684a3b84
+  url: ""
+---
+apiVersion: promoter.argoproj.io/v1alpha1
+kind: CommitStatus
+metadata:
+  labels:
+    app.kubernetes.io/instance: commitstatus
+    promoter.argoproj.io/commit-status: health-check
+  name: environments-development-hc-health-1136247101263115526124
+  namespace: default
+spec:
+  description: ut passed
+  gitRepositoryRef:
+    name: argocon-demo
+  name: environments/development/health-check
+  phase: success
+  sha: 4699e8432a208002d37f28324230c59e684a3b84
   url: ""
