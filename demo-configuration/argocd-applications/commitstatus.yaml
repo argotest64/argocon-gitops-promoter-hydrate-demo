@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: commitstatus
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: default
+  sourceHydrator:
+    drySource:
+      path: user-configuration/commitstatus
+      repoURL: git@github.com:argotest64/argocon-gitops-promoter-hydrate-demo.git
+      targetRevision: HEAD
+    syncSource:
+      path: .
+      targetBranch: environments/commitstatus
+  syncPolicy:
+    automated: {}
