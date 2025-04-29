@@ -5,8 +5,6 @@ metadata:
   name: argocon-demo
   namespace: default
 spec:
-  activeCommitStatuses:
-  - key: argocd-health
   environments:
   - branch: environments/development
     autoMerge: true
