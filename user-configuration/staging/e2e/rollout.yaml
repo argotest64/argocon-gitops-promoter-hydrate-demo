@@ -6,7 +6,7 @@ metadata:
     environment: staging
     db-schema: v1.4
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
