@@ -12,5 +12,5 @@ spec:
     name: argocon-demo
   name: environments/development/unit-test
   phase: success
-  sha: b83758dabdff78fa576d0668024a811f4d43358f
+  sha: 9e01d0fb4d48ee0c2e53fa7f5a772acdcfe34b84
   url: ""
