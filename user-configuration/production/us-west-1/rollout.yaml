@@ -6,7 +6,7 @@ metadata:
     environment: production
     db-schema: v1.2
 spec:
-  replicas: 3
+  replicas: 1
   template:
     metadata:
       labels:
