@@ -53,7 +53,7 @@ metadata:
   name: canary-demo
   namespace: production-usw1
 spec:
-  replicas: 1
+  replicas: 2
   revisionHistoryLimit: 1
   selector:
     matchLabels:
