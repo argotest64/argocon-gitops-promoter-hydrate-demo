@@ -7,11 +7,10 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   project: default
-  sourceHydrator:
-    source:
-      path: user-configuration/commitstatus
-      repoURL: git@github.com:argotest64/argocon-gitops-promoter-hydrate-demo.git
-      targetRevision: environments/commitstatus
+  source:
+    path: user-configuration/commitstatus
+    repoURL: git@github.com:argotest64/argocon-gitops-promoter-hydrate-demo.git
+    targetRevision: environments/commitstatus
   syncPolicy:
     automated: {}
 
