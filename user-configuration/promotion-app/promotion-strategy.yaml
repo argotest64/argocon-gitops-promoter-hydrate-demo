@@ -10,6 +10,7 @@ spec:
     autoMerge: true
     activeCommitStatuses:
     - key: unit-test
+    - key: health-check
   - branch: environments/staging
   - branch: environments/production
     proposedCommitStatuses:
