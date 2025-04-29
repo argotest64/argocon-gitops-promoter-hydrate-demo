@@ -8,9 +8,9 @@ spec:
   environments:
   - branch: environments/development
     autoMerge: true
-  - branch: environments/staging
     activeCommitStatuses:
     - key: unit-test
+  - branch: environments/staging
   - branch: environments/production
     proposedCommitStatuses:
     - key: hcap
