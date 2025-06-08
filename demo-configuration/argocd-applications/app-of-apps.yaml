@@ -10,5 +10,5 @@ spec:
   project: default
   source:
     path: demo-configuration/argocd-applications
-    repoURL: https://github.com/argotest64/argocon-gitops-promoter-hydrate-demo.git
+    repoURL: git@github.com:argotest64/argocon-gitops-promoter-hydrate-demo.git
     targetRevision: HEAD
