@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   github:
-    appID: 865488
-    installationID: 49029877
+    appID: 1230708
+    installationID: 65303927
   secretRef:
     name: my-auth

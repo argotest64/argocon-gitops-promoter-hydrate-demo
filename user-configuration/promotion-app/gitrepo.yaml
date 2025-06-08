@@ -9,6 +9,6 @@ metadata:
 spec:
   github:
     name: argocon-gitops-promoter-hydrate-demo
-    owner: zachaller
+    owner: argotest64
   scmProviderRef:
     name: scmprovider-sample
