@@ -1,17 +1,16 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  labels:
-    app.kubernetes.io/instance: integration-staging
+  annotations:
+    argocd.argoproj.io/tracking-id: integration-staging:/Namespace:/intergration-staging
   name: intergration-staging
 ---
 apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    version: v1.0.124
-  labels:
-    app.kubernetes.io/instance: integration-staging
+    argocd.argoproj.io/tracking-id: integration-staging:/Service:intergration-staging/canary-demo
+    version: v1.0.149
   name: canary-demo
   namespace: intergration-staging
 spec:
@@ -27,9 +26,8 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    version: v1.0.124
-  labels:
-    app.kubernetes.io/instance: integration-staging
+    argocd.argoproj.io/tracking-id: integration-staging:/Service:intergration-staging/canary-demo-preview
+    version: v1.0.149
   name: canary-demo-preview
   namespace: intergration-staging
 spec:
@@ -45,9 +43,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   annotations:
-    version: v1.0.124
+    argocd.argoproj.io/tracking-id: integration-staging:argoproj.io/Rollout:intergration-staging/canary-demo
+    version: v1.0.149
   labels:
-    app.kubernetes.io/instance: integration-staging
     environment: staging
   name: canary-demo
   namespace: intergration-staging
@@ -70,7 +68,7 @@ spec:
   template:
     metadata:
       annotations:
-        version: v1.0.124
+        version: v1.0.149
       labels:
         app: canary-demo
         environment: staging
